@@ -1,0 +1,52 @@
+{
+  "name": "featest",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "server",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Albert",
+    "email": "albertgaohy@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "server",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "yarn run eslint && yarn run mocha",
+    "eslint": "eslint server/. test/. --config .eslintrc.json",
+    "build": "next build ./client/",
+    "start": "NODE_ENV=production node server/",
+    "mocha": "mocha test/ --recursive --exit",
+    "dev": "next ./client"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.4",
+    "@feathersjs/errors": "^3.3.4",
+    "@feathersjs/express": "^1.2.7",
+    "@feathersjs/feathers": "^3.2.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "helmet": "^3.13.0",
+    "next": "^7.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "serve-favicon": "^2.5.0",
+    "winston": "^2.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
